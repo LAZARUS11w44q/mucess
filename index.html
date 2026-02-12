@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Muscess</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+  
+</head>
+<body>
+<nav class="navbar">
+    <a href="index.html" class="logo">MUSCESS</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="charts.html">Charts</a>
+      <a href="artists.html">Artists</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-actions">
+      <div class="search-container">
+        <span class="search-icon">&#128269;</span>
+        <input class="global-search" type="text" placeholder="Search songs, artists..." />
+      </div>
+    </div>
+  </nav>
+<main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <span class="category-label">FEATURED</span>
+        <h1 class="headline">Muscess — lyrics, charts, and music culture.</h1>
+        <p class="subhead">A Genius-style demo site. Click any song to open its lyrics page.</p>
+        <div class="hero-ctas">
+          <a class="btn-primary" href="charts.html">Explore Charts</a>
+          <a class="btn-ghost" href="artists.html">Browse Artists</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="featured-card">
+          <img id="featuredCover" alt="Featured cover" />
+          <div class="featured-meta">
+            <p class="featured-title" id="featuredTitle">—</p>
+            <p class="featured-artist" id="featuredArtist">—</p>
+            <a class="featured-link" id="featuredLink" href="#">Open lyrics →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-header">
+      <h2>Top Charts</h2>
+      <a class="section-link" href="charts.html">See all</a>
+    </section>
+    <section id="charts" class="chart-wrap">
+      <div class="chart" data-max="10"></div>
+    </section>
+
+    <section class="section-header">
+      <h2>Latest</h2>
+      <a class="section-link" href="about.html">What is Muscess?</a>
+    </section>
+
+    <section class="news-grid" id="news">
+      <div class="news-card">
+        <span class="news-tag">NEWS</span>
+        <h3>Muscess = Music+Access</h3>
+        <p>Data with your own artists, images, and original lyrics.</p>
+        <a class="card-link" href="about.html">Read more →</a>
+      </div>
+      <div class="news-card">
+        <span class="news-tag">Charts</span>
+        <h3>Tracks that people in love with</h3>
+        <p>Explore your new love RIGHTNOW!!!!</p>
+        <a class="card-link" href="charts.html">View charts →</a>
+      </div>
+      <div class="news-card">
+        <span class="news-tag">EXPLORE</span>
+        <h3>Browse artists</h3>
+        <a class="card-link" href="artists.html">Open artists →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 MUSCESS • Demo site inspired by Genius UI patterns.</p>
+  </footer>
+</body>
+</html>

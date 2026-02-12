@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Song | Muscess</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+  
+</head>
+<body>
+<nav class="navbar">
+    <a href="index.html" class="logo">MUSCESS</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="charts.html">Charts</a>
+      <a href="artists.html">Artists</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-actions">
+      <div class="search-container">
+        <span class="search-icon">&#128269;</span>
+        <input class="global-search" type="text" placeholder="Search songs, artists..." />
+      </div>
+    </div>
+  </nav>
+<main class="container">
+    <div class="song-page">
+      <div class="song-header">
+        <img id="cover" class="song-cover" alt="Cover art">
+        <div class="song-meta">
+          <h1 id="title">Song</h1>
+          <p class="artist-line">
+            <a id="artistLink" href="artists.html" class="artist-link">Artist</a>
+          </p>
+          <p id="meta" class="muted"></p>
+
+          <div class="song-actions">
+            <a class="btn-ghost" href="charts.html">Back to charts</a>
+            <a class="btn-ghost" id="nextSong" href="#">Next song</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="lyrics-wrap">
+        <div class="lyrics-header">
+          <span class="category-label">LYRICS</span>
+          <a class="section-link" href="search.html">Search</a>
+        </div>
+        <pre id="lyrics" class="lyrics"></pre>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><p>© 2026 MUSCESS</p></footer>
+</body>
+</html>
